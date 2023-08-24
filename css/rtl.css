@@ -1,0 +1,76 @@
+/* Start Header */
+/* Start Nav */
+header .nav > ul > li::before {left: unset; right: -100%}
+/* End Nav */
+header .nav > ul > li:hover::before {left: unset; right: 0;}
+/* Start Sitting */
+.sittings .content {left: unset; right: -150px}
+@media (max-width: 768px) {.sittings .content {right: 50%; transform: translateX(50%);}}
+.sittings .lang .lang-icon {margin: auto 0px auto 15px}
+.sittings .lang .en {border-radius: 0px 5px 5px 0}
+.sittings .lang .ar {border-radius: 5px 0 0 5px}
+/* End Sitting */
+/* Start Other-links */
+nav ul .other-links div ul li {padding: 15px 0px 15px 75px}
+@media (min-width: 768px) {
+    nav ul .other-links div ul:last-of-type {padding: 0 20px 0 0}}
+    header nav ul .other-links div ul li p {margin: 0 25px 0 0}
+/* End Other-links */
+/* Srart Main */
+header main img {left: 0; right: unset}
+/* End Main */
+header .double-down {left: unset; right: 50%}
+/* End Headder */
+/* Start Articles */
+.article .articles > div .arrow-right {transform: rotateY(190deg)}
+@keyframes arrow-move-to-right {100% {transform: translateX(-8px) rotateY(190deg);}}
+/* End Articles */
+/* Start Features */
+.feature .features > div:last-of-type input {
+    background: linear-gradient(to left, #03a9f4 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+}
+.feature .features > div:first-of-type input {
+    background: linear-gradient(to left, #f44036 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+}
+.feature .features > div:nth-of-type(2) input {
+    background: linear-gradient(to left, #009688 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+} 
+.feature .features > div:hover input {background-position: right bottom}
+/* End Features */
+/* Start Testimonials */
+.testimonials .people > div div img {right: unset; left: -10px}
+/* End Testimonials */
+/* Start Team-members */
+.team-members .container .box > div:first-of-type img {margin: 0 -50px 0 0}
+/* End Team-members */
+/* Start Services */
+.services .box > div h1 {padding: 5px 25px 5px 35px}
+.services .box > div h1::before {right: unset; left: -50px; transform: skewY(-120deg)}  
+/* End Services */
+/* Start How-It-Works */
+.how-it-works .content .box > img {margin: 0 0 0 30px}
+/* End How-It-Works */
+/* Start Top-Video */
+.top-videos .container .videos .move {display: flex; flex-direction: row-reverse}
+/* End Top-Video */
+/* Start Footer */
+footer .text .call-info > div i {margin: 0 0 0 12px}
+footer .text .links li::before {content: ""}
+footer .text .links li::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\F101";
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 10px;
+    transition: var(--main-transition-duration);
+}
+/* End Footer */
+    
+    
